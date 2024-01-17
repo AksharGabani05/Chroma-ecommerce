@@ -7,7 +7,7 @@ import offer1Image from "../assests/offer1.png"
 import offer1Mobile from "../assests/offer1Mobile.png"
 import Box from '../components/Box'
 import { Link } from 'react-router-dom'
-import { accessoriesData } from '../data'
+import { Dealoftheday, accessoriesData } from '../data'
 
 
 import s1 from "../assests/toptrend.png"
@@ -65,7 +65,7 @@ const Home = () => {
         <div className='text-white'>
             <div className="flex items-center gap-2 md:hidden 10 bg-black text-white">
                 <MdLocationOn className='text-xl' />
-                <p className='whitespace-nowrap text-sm'>Mumbai 400049</p>
+                <p className='whitespace-nowrap text-sm'>Surat 395005</p>
                 <IoPencil className='text-xs' />
             </div>
 
@@ -102,6 +102,26 @@ const Home = () => {
 
                     </div>
                 </SliderAuto>
+
+                <h2 className='font-medium text-2xl my-5'>Deals of the Day</h2>
+                <div>
+                    <SliderAuto width={285}>
+                        {
+                            Dealoftheday.map(el =>{
+                                return(
+                                  <Card
+                                    key={el.id}
+                                    id = {el.id}
+                                    title ={el.title}
+                                    img  = {el.img}
+                                    pricesell = {el.priceSell}
+                                    pricedis = {el.priceDis}
+                                  />  
+                                )
+                            })
+                        }
+                    </SliderAuto>
+                </div>
 
 
                 {/* Highlights */}

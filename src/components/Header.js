@@ -33,7 +33,7 @@ const Header = () => {
                     <div className='flex items-center gap-9'>
                         <div className="flex items-center gap-2">
                             <MdLocationOn className='text-xl' />
-                            <p className='whitespace-nowrap text-sm'>Mumbai 400049</p>
+                            <p className='whitespace-nowrap text-sm'>Surat 395005</p>
                             <IoPencil className='text-xs' />
                         </div>
                         <div className=' text-2xl'>
