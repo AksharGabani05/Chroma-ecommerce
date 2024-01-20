@@ -1,12 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from "../assests/logo.svg"
 import { IoMenuOutline, IoPencil } from "react-icons/io5"
 import { CiSearch } from "react-icons/ci"
 import { MdLocationOn } from "react-icons/md"
 import { FaUser, FaShoppingCart } from "react-icons/fa"
 import Box from './Box'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
+;
+
+
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+      
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };
+        
+
     return (
         <header className='bg-black text-white flex justify-between h-20'>
            
@@ -21,8 +33,24 @@ const Header = () => {
                         </div>
                         <div className='flex items-center'>
                             <IoMenuOutline className='text-3xl' />
-                            <p className='text-sm'>Menu</p>
+                            <p className='text-sm' >Menu</p>
                         </div>
+
+
+                        <div className="md:hidden" style={{ display: isMenuOpen ? 'block' : 'none' }}>
+          <div className="flex flex-col">
+            <Link to="/" className="text-white p-2">
+              Home
+            </Link>
+            <Link to="/about" className="text-white p-2">
+              About
+            </Link>
+            <Link to="/products" className="text-white p-2">
+              Products
+            </Link>
+          </div>
+        </div>
+
                         <div className='flex items-center bg-white h-9 w-full max-w-md px-2 rounded-md'>
                             <input type="text" placeholder="What are you looking for ?" className='w-full bg-transparent outline-none border-none px-3 placeholder:text-sm text-black' />
                             <CiSearch className='text-black text-2xl ' />

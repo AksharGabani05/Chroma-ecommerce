@@ -27,6 +27,19 @@ import s14 from "../assests/gaming.avif"
 import s15 from "../assests/toptrend.png"
 import SliderAuto from '../components/SliderAuto'
 
+import ss1 from "../assests/ss1.webp"
+import ss2 from "../assests/ss2.webp"
+import ss3 from "../assests/ss3.png"
+import ss4 from "../assests/ss4.png"
+import ss5 from "../assests/ss5.png"
+import ss6 from "../assests/ss6.png"
+import ss7 from "../assests/ss7.png"
+import ss8 from "../assests/ss8.png"
+import ss9 from "../assests/ss9.png"
+import ss10 from "../assests/ss10.png"
+import ss11 from "../assests/ss11.png"
+import ss12 from "../assests/ss12.png"
+
 
 import hightlights1 from "../assests/hightlights1.avif"
 import hightlights2 from "../assests/hightlights2.avif"
@@ -99,7 +112,6 @@ const Home = () => {
                         <img src={s12} className="w-14 md:min-w-[125px]" />
                         <img src={s13} className="w-14 md:min-w-[125px]" />
                         <img src={s14} className="w-14 md:min-w-[125px]" />
-
                     </div>
                 </SliderAuto>
 
@@ -164,6 +176,30 @@ const Home = () => {
                     <img src={newatcroma10} className="h-44 md:h-60 rounded-lg " />
                     <img src={newatcroma11} className="h-44 md:h-60 rounded-lg " />
                     <img src={newatcroma12} className="h-44 md:h-60 rounded-lg " />
+                </SliderAuto>
+<br />
+                <SliderAuto width={125}>
+                    <div className='flex gap-3 md:gap-6'>
+                        <img src={ss1} className="w-14 md:min-w-[125px]" />
+                        <img src={ss2} className="w-14 md:min-w-[125px]" />
+                        <img src={ss3} className="w-14 md:min-w-[125px]" />
+                        <img src={ss4} className="w-14 md:min-w-[125px]" />
+                        <img src={ss5} className="w-14 md:min-w-[125px]" />
+                        <img src={ss6} className="w-14 md:min-w-[125px]" />
+                        <img src={ss7} className="w-14 md:min-w-[125px]" />
+
+                    </div>
+                    <div className='flex'>
+                    <img src={ss8} className="w-14 md:min-w-[125px]" />
+                        <img src={ss9} className="w-14 md:min-w-[125px]" />
+                        <img src={ss10} className="w-14 md:min-w-[125px]" />
+                        <img src={ss11} className="w-14 md:min-w-[125px]" />
+                        <img src={ss12} className="w-14 md:min-w-[125px]" />
+                        <img src={ss5} className="w-14 md:min-w-[125px]" />
+                        <img src={ss6} className="w-14 md:min-w-[125px]" />
+                        <img src={ss7} className="w-14 md:min-w-[125px]" />
+
+                    </div>
                 </SliderAuto>
 
                 {/* Accessories under 999 */}
